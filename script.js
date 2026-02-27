@@ -5,17 +5,17 @@ $(document).ready(function () {
         let name = $("#searchInput").val();
 
         $.ajax(
-        {
-            url: url + name,
-            method: "GET",
-            success: success,
-            error: error
-        })
+            {
+                url: url + name,
+                method: "GET",
+                success: success,
+                error: error
+            })
     })
 })
 
-function success(data){
-   let pokemonHTML = `
+function success(data) {
+    let pokemonHTML = `
                     <div class="card">
                         <h2>${data.name.toUpperCase()}</h2>
                         <img src="${data.sprites.front_default}" />
@@ -25,10 +25,6 @@ function success(data){
                     </div>
                 `;
 
-                $("#result").html(pokemonHTML);
+    $("#result").html(pokemonHTML);
 }
 
-function error(){
-   console.log(error);
-   
-}

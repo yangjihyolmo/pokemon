@@ -20,8 +20,8 @@ function success(data) {
     console.log("Data received:", data);
     let pokemonHTML = `
                     <div class="card">
-                        <h2>${data.name.toUpperCase()}</h2>
-                        <img src="${data.sprites.front_default}" />
+                        <h2 class="cardHeading">${data.name.toUpperCase()}</h2>
+                        <img src="${data.sprites.front_default}" class="pokemonImg/>
                         <p class="pokemonInfo"><strong class="label">Height:</strong> ${data.height}</p>
                         <p class="pokemonInfo"><strong class="label">Weight:</strong> ${data.weight}</p>
                         <p class="pokemonInfo"><strong class="label">Type:</strong> ${data.types[0].type.name}</p>

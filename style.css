@@ -1,6 +1,10 @@
 body {
     text-align: center;
-    background-color: #f2f2f2;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .inputContainer {
@@ -35,12 +39,70 @@ body {
     background-color: #45a049;
 }
 
+h1 {
+    color: white;
+    font-size: 48px;
+    margin: 30px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
-    background: white;
-    width: 250px;
-    margin: 20px auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    width: 300px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.3);
+}
+
+.cardHeading {
+    color: #667eea;
+    font-size: 28px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.pokemonImg {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    background: radial-gradient(circle at center, rgba(102, 126, 234, 0.1), transparent);
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.pokemonInfo {
+    color: #333;
+    font-size: 16px;
+    margin: 12px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    color: #667eea;
+    font-weight: 600;
 }
 

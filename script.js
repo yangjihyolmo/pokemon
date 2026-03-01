@@ -22,9 +22,9 @@ function success(data) {
                     <div class="card">
                         <h2>${data.name.toUpperCase()}</h2>
                         <img src="${data.sprites.front_default}" />
-                        <p><strong>Height:</strong> ${data.height}</p>
-                        <p><strong>Weight:</strong> ${data.weight}</p>
-                        <p><strong>Type:</strong> ${data.types[0].type.name}</p>
+                        <p class="pokemonInfo"><strong class="label">Height:</strong> ${data.height}</p>
+                        <p class="pokemonInfo"><strong class="label">Weight:</strong> ${data.weight}</p>
+                        <p class="pokemonInfo"><strong class="label">Type:</strong> ${data.types[0].type.name}</p>
                     </div>
                 `;
 

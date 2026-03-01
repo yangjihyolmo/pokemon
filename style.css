@@ -1,108 +1,111 @@
 body {
-    text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("https://i.redd.it/24b9a646oaq71.jpg"); 
+  background-size: cover; 
+  background-position: center; 
 }
 
 .inputContainer {
-    display: inline-flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50px;
-    padding: 5px 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 5px 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .searchInput {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 50px;
-    width: 250px;
-    font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  width: 250px;
+  font-size: 16px;
 }
 
 .searchBtn {
-    padding: 10px 15px;
-    margin-left: 5px;
-    cursor: pointer;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 50px;
-    font-size: 16px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
 }
 
 .searchBtn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 h1 {
-    color: white;
-    font-size: 48px;
-    margin: 30px 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    letter-spacing: 2px;
+  color: white;
+  font-size: 48px;
+  margin: 30px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
 }
 
 .results {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
-    width: 300px;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0px 15px 35px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    border: 2px solid rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 20px 40px rgba(0,0,0,0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .cardHeading {
-    color: #667eea;
-    font-size: 28px;
-    margin: 15px 0;
-    letter-spacing: 1px;
+  color: #667eea;
+  font-size: 28px;
+  margin: 15px 0;
+  letter-spacing: 2px;
 }
 
 .pokemonImg {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    background: radial-gradient(circle at center, rgba(102, 126, 234, 0.1), transparent);
-    border-radius: 15px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.card img:hover {
-    transform: scale(1.05);
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .pokemonInfo {
-    color: #333;
-    font-size: 16px;
-    margin: 12px 0;
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  color: #333;
+  font-size: 16px;
+  margin: 12px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .label {
-    color: #667eea;
-    font-weight: 600;
+  color: #667eea;
+  font-weight: 600;
 }
-

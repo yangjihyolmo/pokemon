@@ -1,8 +1,6 @@
 # Pokédex Project
 
-A simple web-based Pokédex built with **HTML, CSS, and JavaScript** using the [PokéAPI](https://pokeapi.co/).
-
----
+A simple web-based Pokédex built with **HTML, CSS, and JavaScript** using the [PokéAPI]
 
 ## Features
 

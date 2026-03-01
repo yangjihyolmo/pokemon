@@ -1,20 +1,28 @@
 let url = "https://pokeapi.co/api/v2/pokemon/";
 
 $(document).ready(function () {
-    $(".searchBtn").click(function () {
-        let name = $(".searchInput").val();
+    $(".searchBtn").click(searchPokemon)
 
-        $.ajax(
-            {
-                url: url + name,
-                method: "GET",
-                success: success,
-                error: function () {
-                    $(".results").html("<p>Pokémon not found </p>");
-                }
-            })
-    })
+    $(".searchInput").on("keydown", function (e) {
+        if (e.key === "Enter") {
+            searchPokemon();
+        }
+    });
+
 })
+
+function searchPokemon() {
+    let name = $(".searchInput").val();
+    $.ajax(
+        {
+            url: url + name,
+            method: "GET",
+            success: success,
+            error: function () {
+                $(".results").html("<p>Pokémon not found </p>");
+            }
+        })
+}
 
 function success(data) {
     console.log("Data received:", data);

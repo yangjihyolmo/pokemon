@@ -27,6 +27,7 @@ body {
   border-radius: 50px;
   width: 250px;
   font-size: 16px;
+  margin: 5px;
 }
 
 .searchBtn {

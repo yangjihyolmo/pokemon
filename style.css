@@ -111,3 +111,41 @@ h1 {
   color: #667eea;
   font-weight: 600;
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  .inputContainer {
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .searchInput {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .searchBtn {
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .pokemonImg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .pokemonInfo {
+    font-size: 14px;
+  }
+}
